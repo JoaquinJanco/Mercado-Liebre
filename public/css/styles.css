@@ -1,0 +1,237 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+
+header {
+    background-color: #EAC926;
+    padding: 1rem;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%; /* Ancho del 90% de la pantalla */
+}
+
+.logo img{
+    width: 150px;
+    margin-left: auto;
+}
+
+.search-bar {
+    background-color: #ebebeb;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0rem auto;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.cta {
+    text-align: center;
+    font-size: 1rem;
+    color: #03264C;
+    padding: 0.5rem;
+    margin: 0rem auto;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+
+}
+
+/* Estilos para el menú hamburguesa */
+.hamburger-menu {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    width: fit-content;
+    padding: 1rem;
+    background-color: #03264C;
+    border-radius: .5rem;
+}
+
+.hamburger-menu i {
+    color: white;
+    font-size: 1rem;
+}
+
+.img-home-banner {
+    margin: 0;
+    position: relative;
+    max-width: 100%; 
+}
+
+.img-home-banner img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+/* Estilos Tipograficos -------------------------------------------------------------*/
+.titulares {
+    font-size: 24px;
+    padding: 1rem;
+}
+
+.precios {
+    font-size: 18px;
+    margin-bottom: 5px; 
+    margin: 0;
+}
+
+.descuentos {
+    font-size: 16px; 
+    color: #39b54a;
+    margin-bottom: 5px;
+    margin: 0;
+}
+
+/* Estilos para el Main -------------------------------------------------------------*/
+.product-container {
+    display: flex; /* Organizar los productos en una fila usando Flexbox */
+    flex-wrap: wrap; /* Permitir que los productos se envuelvan a la siguiente fila */
+    justify-content: center; /* Centrar los productos horizontalmente */
+
+}
+
+/* Estilos para cada producto */
+.producto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 200px; /* Ancho fijo para cada producto */
+    margin: 10px; /* Espacio entre los productos */
+    display: flex; /* Usar Flexbox para el contenido interno */
+    flex-direction: column; /* Apilar el contenido verticalmente */
+    justify-content: flex-end; /* Alinear el contenido en la parte superior */
+}
+  
+.producto img {
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.fa-solid.fa-truck {
+    color: #39b54a;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+/* Estilos para el Footer -------------------------------------------------------------*/
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+footer h2{
+    margin: 0;
+}
+
+footer i {
+    color:  #03264C;
+    width: 2em;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Pantalla -------------------------------------------------------------*/
+
+
+/* Computadora */
+@media screen and (min-width: 769px) {
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .barra-navegacion {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
+      
+      .barra-navegacion ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+    }
+      
+    .barra-navegacion li {
+        margin-right: 20px;
+    }
+      
+    .barra-navegacion a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}
+
+/* Tablets  */
+@media screen and (min-width: 361px) and (max-width: 768px){
+    .barra-navegacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .barra-navegacion ul {
+        list-style: none;
+        text-align: center;
+        padding: 1em;
+      }  
+
+    .barra-navegacion li {
+        padding: 1em;
+      }    
+    .barra-navegacion a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: medium;
+        color: #000000;
+        padding: 1em;
+        border-radius: 5px;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 360px) {
+    .barra-navegacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .barra-navegacion ul {
+        list-style: none;
+        text-align: center;
+        padding: 1em;
+      }  
+
+    .barra-navegacion li {
+        padding: 1em;
+      }    
+    .barra-navegacion a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        font-size: medium;
+        border-radius: 5px;
+        margin: 0rem auto;
+    }
+}
